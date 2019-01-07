@@ -1,0 +1,7 @@
+phases:
+  install:
+    commands:
+      - npm install -g serverless@1.20.2
+  post_build:
+    commands:
+      - serverless deploy --region us-east-1 --verbose
